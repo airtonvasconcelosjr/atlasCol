@@ -90,8 +90,7 @@
 }
 
 .title{
-  left: 38%;
-  font-size: 15px;
+  font-size: 12px;
   position: relative;
   cursor: pointer;
   margin: 15px 5px 15px 5px;
@@ -102,13 +101,27 @@
   color: white;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: 300;
-  
+  margin-right: 350px;
+  flex-basis: calc(33.33% - 10px);
+  margin: 5px;
 }
 
+.button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+  .botoes-descricao button {
+    font-size: 9px;
+    padding: 1px 10px;
+  }
+}
 
 @media (min-width: 576px) {
   .imagem-descricao {
-      width: 120%;
+      width: 100%;
   }
 }
 @media (min-width: 768px) {
