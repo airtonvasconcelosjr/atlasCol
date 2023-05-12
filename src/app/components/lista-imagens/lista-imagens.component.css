@@ -119,6 +119,12 @@
   }
 }
 
+@media (min-width: 176px) {
+  .imagem-descricao {
+      width: 100%;
+  }
+}
+
 @media (min-width: 576px) {
   .imagem-descricao {
       width: 100%;
