@@ -1,0 +1,52 @@
+.custom-container { 
+    display: flex;
+    background-color: white;
+}
+
+.column {
+    width: 33%;
+    padding: 10px;
+}
+
+.description {
+    color: green;
+}
+
+.image-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+
+.image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mattress {
+    width: 50%; /* Defina a largura desejada */
+    height: auto;
+}
+
+.title {
+    text-align: left;
+}
+
+h2 {
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: left;
+    margin-right: 10px; /* Ajuste a margem conforme necessário */
+  }
+
+.title-container {
+    display: flex;
+    align-items: start;
+}
+
+.line {
+    flex-grow: 1;
+    border-top: 1px solid black; /* Cor e estilo da linha */
+}

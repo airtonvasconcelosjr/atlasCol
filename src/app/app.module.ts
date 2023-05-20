@@ -7,6 +7,7 @@ import { CabecalhoComponent } from './components/cabecalho/cabecalho.component';
 import { RodapeComponent } from './components/rodape/rodape.component';
 import { ListaImagensComponent } from './components/lista-imagens/lista-imagens.component';
 import { DescricaoImagensComponent } from './components/descricao-imagens/descricao-imagens.component';
+import { IndexComponent } from './components/index/index.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { DescricaoImagensComponent } from './components/descricao-imagens/descri
     CabecalhoComponent,
     RodapeComponent,
     ListaImagensComponent,
-    DescricaoImagensComponent
+    DescricaoImagensComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,
