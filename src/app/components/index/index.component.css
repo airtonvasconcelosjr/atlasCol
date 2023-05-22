@@ -1,7 +1,6 @@
 .custom-container {
     display: flex;
     background-color: white;
-    animation-fill-mode: forwards
 }
 
 .column {
@@ -31,7 +30,6 @@
     animation-name: slideInFromRight; /* Nome da animação */
     animation-duration: 2s; /* Duração da animação */
     animation-delay: 0.1s; /* Atraso antes de iniciar a animação */
-    animation-fill-mode: forwards; /* Manter estado final da animação */
     opacity: 0;
 }
 
@@ -41,7 +39,6 @@
         transform: translateX(100%); /* Iniciar fora da tela à direita */
     }
     to {
-        animation-fill-mode: forwards;
         opacity: 1;
     }
 }
@@ -85,7 +82,6 @@
     animation-name: fadeIn; /* Nome da animação */
     animation-duration: 1.5s; /* Duração da animação */
     animation-delay: 1s; /* Atraso antes de iniciar a animação */
-    animation-fill-mode: forwards; /* Manter estado final da animação */
     opacity: 0;
 }
 
@@ -174,7 +170,6 @@ h2 {
     .column {
         width: 100%;
         animation: slide-in-right 1s ease-in-out forwards;
-        animation-fill-mode: forwards;
         padding: 0px;
     }
 
@@ -192,7 +187,6 @@ h2 {
 
     .column {
         animation: slide-in-right 1s ease-in-out forwards;
-        animation-fill-mode: forwards;
         padding: 0px;
     }
     .parag{
@@ -217,7 +211,6 @@ h2 {
 @media (min-width: 429px) {
     .column {
         animation: slide-in-up 2s ease-in-out forwards;
-        animation-fill-mode: forwards
     }
 }
 
