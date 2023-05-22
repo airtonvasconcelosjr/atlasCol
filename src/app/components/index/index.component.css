@@ -77,6 +77,7 @@
     text-align: justify;
 }
 
+
 .title {
     font-size: 2.5rem;
     color: black;
@@ -96,6 +97,7 @@
         opacity: 1;
     }
 }
+
 
 h2 {
     display: flex;
