@@ -25,28 +25,57 @@
 }
 
 .mattress {
-    width: 50%; /* Defina a largura desejada */
+    width: 50%; 
     height: auto;
 }
 
-.title {
-    text-align: left;
+
+.number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
 }
+
+
+.parag{
+    text-align: justify;
+}
+
+.title{
+    font-size: 2.5rem;
+    color: black;
+    margin-left: 2%;
+}
+
+
 
 h2 {
+    display: flex;
     color: black;
     font-weight: bold;
-    font-size: 2rem;
-    text-align: left;
-    margin-right: 10px; /* Ajuste a margem conforme necessário */
-  }
-
-.title-container {
-    display: flex;
-    align-items: start;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-top: -25px;
 }
 
-.line {
-    flex-grow: 1;
-    border-top: 1px solid black; /* Cor e estilo da linha */
+@media (max-width: 900px) {
+    .title{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 800px) {
+    h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .title{
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
 }
