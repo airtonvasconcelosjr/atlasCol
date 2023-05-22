@@ -30,6 +30,7 @@
     animation-name: slideInFromRight; /* Nome da animação */
     animation-duration: 2s; /* Duração da animação */
     animation-delay: 0.1s; /* Atraso antes de iniciar a animação */
+    animation-fill-mode: forwards;
     opacity: 0;
 }
 
@@ -82,6 +83,7 @@
     animation-name: fadeIn; /* Nome da animação */
     animation-duration: 1.5s; /* Duração da animação */
     animation-delay: 1s; /* Atraso antes de iniciar a animação */
+    animation-fill-mode: forwards;
     opacity: 0;
 }
 
@@ -193,7 +195,7 @@ h2 {
         font-size: 0.7rem;
         margin-left: 10px;
         margin-right: 10px;
-        animation: slide-in-right 1s ease-in-out;
+        animation: slide-in-right 1.5s ease-in-out;
     }
 }
 
@@ -201,16 +203,18 @@ h2 {
     0% {
         opacity: 0;
         transform: translateX(-100%);
+        animation-fill-mode: forwards;
     }
     100% {
         opacity: 1;
         transform: translateX(0);
+        animation-fill-mode: forwards;
     }
 }
 
 
 @media (min-width: 429px) {
-    .column {
+    .parag {
         animation: slide-in-up 2s ease-in-out forwards;
     }
 }
@@ -219,9 +223,11 @@ h2 {
     0% {
         opacity: 0;
         transform: translateY(100%);
+        animation-fill-mode: forwards;
     }
     100% {
         opacity: 1;
         transform: translateY(0);
+        animation-fill-mode: forwards;
     }
 }
