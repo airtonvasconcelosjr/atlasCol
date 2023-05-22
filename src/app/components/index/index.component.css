@@ -160,7 +160,11 @@ h2 {
     }
 
     h2{
-        font-size: 1.8rem;
+        font-size: 1.1rem;
+        margin-left: 50px;
+    }
+    .number{
+        margin-left: 10px;
     }
 
     .mattress {
@@ -169,7 +173,7 @@ h2 {
     }
     .column {
         width: 100%;
-        padding: 0;
+        padding: 0px;
     }
 
     .title-container {
@@ -186,7 +190,13 @@ h2 {
 
     .column {
         animation: slide-in-right 1s ease-in-out forwards;
-        animation-fill-mode: forwards
+        animation-fill-mode: forwards;
+        padding: 0px;
+    }
+    .parag{
+        font-size: 0.7rem;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
