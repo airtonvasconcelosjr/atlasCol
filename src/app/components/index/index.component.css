@@ -173,6 +173,8 @@ h2 {
     }
     .column {
         width: 100%;
+        animation: slide-in-right 1s ease-in-out forwards;
+        animation-fill-mode: forwards;
         padding: 0px;
     }
 
