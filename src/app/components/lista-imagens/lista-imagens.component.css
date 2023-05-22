@@ -22,6 +22,10 @@
   object-fit: contain;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2z); /* adiciona uma sombra com deslocamento x=2px, y=2px, blur=5px e transparência de 30% */
   margin-top: 10px;
+  animation-name: slideDown;
+  animation-duration: 1s;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
 }
 
 .botoes-descricao {
@@ -110,6 +114,17 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 767px) {
