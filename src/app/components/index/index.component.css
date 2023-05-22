@@ -193,6 +193,7 @@ h2 {
         font-size: 0.7rem;
         margin-left: 10px;
         margin-right: 10px;
+        animation: slide-in-right 1s ease-in-out;
     }
 }
 
