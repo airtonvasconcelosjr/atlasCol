@@ -34,12 +34,25 @@ export class ListaImagensComponent {
   restonic = [
   { id: 15, nome: '467', fabril:'Restonic', imagem: 'assets/imagens/467.png', descricao: 'assets/imagens/467_desc.png', abrirDescricao: false },
   ];
+  ecoflex = [
+    {id: 16, nome: '125', fabril:'Ecoflex', imagem: 'assets/imagens/125.png', descricao: 'assets/imagens/125_desc.png', abrirDescricao: false},
+    {id: 17, nome: '235', fabril:'Ecoflex', imagem: 'assets/imagens/235.png', descricao: 'assets/imagens/235_desc.png', abrirDescricao: false},
+    {id: 18, nome: '335', fabril:'Ecoflex', imagem: 'assets/imagens/335.png', descricao: 'assets/imagens/335_desc.png', abrirDescricao: false},
+    {id: 19, nome: '425', fabril:'Ecoflex', imagem: 'assets/imagens/425.png', descricao: 'assets/imagens/425_desc.png', abrirDescricao: false},
+    {id: 20, nome: '535', fabril:'Ecoflex', imagem: 'assets/imagens/535.png', descricao: 'assets/imagens/535_desc.png', abrirDescricao: false},
+    {id: 21, nome: '675', fabril:'Ecoflex', imagem: 'assets/imagens/675.png', descricao: 'assets/imagens/675_desc.png', abrirDescricao: false},
+    {id: 22, nome: '775', fabril:'Ecoflex', imagem: 'assets/imagens/775.png', descricao: 'assets/imagens/775_desc.png', abrirDescricao: false},
+  ];
+  dunlopillo = [
+    { id: 23, nome: '469', fabril:'Dunlopillo', imagem: 'assets/imagens/469.png', descricao: 'assets/imagens/469_desc.png', abrirDescricao: false }
+  ]
 
   mostrarOpcoes = {
     king: { ativo: false, setaParaBaixo: true },
     mercosul: { ativo: false, setaParaBaixo: true },
     restonic: { ativo: false, setaParaBaixo: true },
-    ecoflex: { ativo: false, setaParaBaixo: true }
+    ecoflex: { ativo: false, setaParaBaixo: true },
+    dunlopillo: { ativo: false, setaParaBaixo: true }
   };
 
   mostrarKing = false;
@@ -50,6 +63,8 @@ export class ListaImagensComponent {
   mostrarSetaParaBaixoRestonic = true;
   mostrarEcoflex = false;
   mostrarSetaParaBaixoEcoflex = true
+  mostrarDunlopillo = false;
+  mostrarSetaParaBaixoDunlopillo = true
   
 
   colchaoAberto: number | null = null;
@@ -59,47 +74,76 @@ export class ListaImagensComponent {
       this.mostrarOpcoes.king.ativo = !this.mostrarOpcoes.king.ativo;
       this.mostrarOpcoes.king.setaParaBaixo = !this.mostrarOpcoes.king.setaParaBaixo;
   
-      // Fechar a opção Mercosul, se estiver aberta
-      if (this.mostrarOpcoes.mercosul.ativo) {
+      // Fechar tudo no caso de escolher king
+      if (this.mostrarOpcoes.king.ativo) {
         this.mostrarOpcoes.mercosul.ativo = false;
         this.mostrarOpcoes.mercosul.setaParaBaixo = true;
-      }
-      // Fechar a opção Restonic, se estiver aberta
-      if (this.mostrarOpcoes.restonic.ativo) {
         this.mostrarOpcoes.restonic.ativo = false;
         this.mostrarOpcoes.restonic.setaParaBaixo = true;
+        this.mostrarOpcoes.ecoflex.ativo = false;
+        this.mostrarOpcoes.ecoflex.setaParaBaixo = true;
       }
     } else if (opcao === 'mercosul') {
       this.mostrarOpcoes.mercosul.ativo = !this.mostrarOpcoes.mercosul.ativo;
       this.mostrarOpcoes.mercosul.setaParaBaixo = !this.mostrarOpcoes.mercosul.setaParaBaixo;
   
-      // Fechar a opção King Koil, se estiver aberta
-      if (this.mostrarOpcoes.king.ativo) {
+      // Fechar tudo no caso de escolher mercosul
+      if (this.mostrarOpcoes.mercosul.ativo) {
         this.mostrarOpcoes.king.ativo = false;
         this.mostrarOpcoes.king.setaParaBaixo = true;
-      }
-      // Fechar a opção Restonic, se estiver aberta
-      if (this.mostrarOpcoes.restonic.ativo) {
         this.mostrarOpcoes.restonic.ativo = false;
         this.mostrarOpcoes.restonic.setaParaBaixo = true;
+        this.mostrarOpcoes.ecoflex.ativo = false;
+        this.mostrarOpcoes.ecoflex.setaParaBaixo = true;
       }
     } else if (opcao === 'restonic') {
       this.mostrarOpcoes.restonic.ativo = !this.mostrarOpcoes.restonic.ativo;
       this.mostrarOpcoes.restonic.setaParaBaixo = !this.mostrarOpcoes.restonic.setaParaBaixo;
   
-      // Fechar a opção King Koil, se estiver aberta
-      if (this.mostrarOpcoes.king.ativo) {
+      // Fechar tudo no caso de escolher restonic
+      if (this.mostrarOpcoes.restonic.ativo) {
         this.mostrarOpcoes.king.ativo = false;
         this.mostrarOpcoes.king.setaParaBaixo = true;
-      }
-      // Fechar a opção Mercosul, se estiver aberta
-      if (this.mostrarOpcoes.mercosul.ativo) {
         this.mostrarOpcoes.mercosul.ativo = false;
         this.mostrarOpcoes.mercosul.setaParaBaixo = true;
+        this.mostrarOpcoes.ecoflex.ativo = false;
+        this.mostrarOpcoes.ecoflex.setaParaBaixo = true;
+      }
+    }
+    else if (opcao === 'ecoflex') {
+      this.mostrarOpcoes.ecoflex.ativo = !this.mostrarOpcoes.ecoflex.ativo;
+      this.mostrarOpcoes.ecoflex.setaParaBaixo = !this.mostrarOpcoes.ecoflex.setaParaBaixo;
+  
+      // Fechar tudo no caso de escolher ecoflex
+      if (this.mostrarOpcoes.ecoflex.ativo) {
+        this.mostrarOpcoes.king.ativo = false;
+        this.mostrarOpcoes.king.setaParaBaixo = true;
+        this.mostrarOpcoes.mercosul.ativo = false;
+        this.mostrarOpcoes.mercosul.setaParaBaixo = true;
+        this.mostrarOpcoes.restonic.ativo = false;
+        this.mostrarOpcoes.restonic.setaParaBaixo = true;
+      }
+    }
+
+    else if (opcao === 'dunlopillo') {
+      this.mostrarOpcoes.dunlopillo.ativo = !this.mostrarOpcoes.dunlopillo.ativo;
+      this.mostrarOpcoes.dunlopillo.setaParaBaixo = !this.mostrarOpcoes.dunlopillo.setaParaBaixo;
+  
+      // Fechar tudo no caso de escolher Dunlopillo
+      if (this.mostrarOpcoes.dunlopillo.ativo) {
+        this.mostrarOpcoes.king.ativo = false;
+        this.mostrarOpcoes.king.setaParaBaixo = true;
+        this.mostrarOpcoes.mercosul.ativo = false;
+        this.mostrarOpcoes.mercosul.setaParaBaixo = true;
+        this.mostrarOpcoes.restonic.ativo = false;
+        this.mostrarOpcoes.restonic.setaParaBaixo = true;
+        this.mostrarOpcoes.ecoflex.ativo = false;
+        this.mostrarOpcoes.ecoflex.setaParaBaixo = true;
       }
     }
   }
   
+
 
   
   toggleDescricao(colchao: any) {
