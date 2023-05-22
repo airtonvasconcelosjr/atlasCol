@@ -30,6 +30,7 @@
     animation-name: slideInFromRight; /* Nome da animação */
     animation-duration: 2s; /* Duração da animação */
     animation-delay: 0.1s; /* Atraso antes de iniciar a animação */
+    animation-fill-mode: forwards;
     opacity: 0;
 }
 
@@ -82,6 +83,7 @@
     animation-name: fadeIn; /* Nome da animação */
     animation-duration: 1.5s; /* Duração da animação */
     animation-delay: 1s; /* Atraso antes de iniciar a animação */
+    animation-fill-mode: forwards;
     opacity: 0;
 }
 
@@ -201,10 +203,12 @@ h2 {
     0% {
         opacity: 0;
         transform: translateX(-100%);
+        animation-fill-mode: forwards;
     }
     100% {
         opacity: 1;
         transform: translateX(0);
+        animation-fill-mode: forwards;
     }
 }
 
@@ -219,9 +223,11 @@ h2 {
     0% {
         opacity: 0;
         transform: translateY(100%);
+        animation-fill-mode: forwards;
     }
     100% {
         opacity: 1;
         transform: translateY(0);
+        animation-fill-mode: forwards;
     }
 }
