@@ -3,42 +3,43 @@
   justify-content: center;
   flex-wrap: wrap;
   min-height: auto;
-  padding: 20px; /* adicionei um padding para separar do cabeçalho */
+  padding: 20px; 
 }
 
 .lista-colchoes {
   position: relative;
   flex-basis: calc(33.33% - 10px);
   margin: 5px;
-  align-items: center; /* centraliza a imagem e os botões */
+  align-items: center; 
 }
 
 .imagem-colchao {
   width: 100%;
-  max-width: 875px; /* define uma largura máxima para a imagem */
+  max-width: 875px;
   height: auto;
   margin: 5px;
   aspect-ratio: 3/2;
   object-fit: contain;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2z); /* adiciona uma sombra com deslocamento x=2px, y=2px, blur=5px e transparência de 30% */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2z);
   margin-top: 10px;
   animation-name: slideDown;
   animation-duration: 1s;
   animation-delay: 0.2s;
   animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 .botoes-descricao {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10px; /* adiciona um espaço entre a imagem e os botões */
+  margin-top: 10px; 
 }
 
 .botoes-descricao button {
   margin-bottom: 10px;
   font-size: 14px;
-  padding: 1em 1.5em; /* exemplo de uso da unidade 'em' */
+  padding: 1em 1.5em; 
   border-radius: 10px;
   border: none;
   background-color: black;
@@ -98,7 +99,7 @@
   position: relative;
   cursor: pointer;
   margin: 15px 5px 15px 5px;
-  padding: 5px 15px; /* exemplo de uso da unidade 'em' */
+  padding: 5px 15px; 
   border-radius: 10px;
   border: none;
   background-color: black;
