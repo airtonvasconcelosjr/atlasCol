@@ -107,7 +107,7 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: 300;
   margin-right: 350px;
-  flex-basis: calc(33.33% - 10px);
+  flex-basis: calc(20% - 10px);
   margin: 5px;
 }
 
@@ -171,4 +171,12 @@
       width: 60%;
   }
 }
+
+@media (max-width: 428px) { /* Ajuste o valor para se adequar ao iPhone 12 Pro */
+  .title {
+      padding: 1px;
+      border-radius: 4px;
+  }
+}
+
 

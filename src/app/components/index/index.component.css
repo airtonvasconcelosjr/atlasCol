@@ -73,6 +73,7 @@
 
 .parag {
     text-align: justify;
+    animation-fill-mode: forwards;
 }
 
 
@@ -213,9 +214,9 @@ h2 {
 }
 
 
-@media (min-width: 429px) {
+@media (min-width: 750px) {
     .parag {
-        animation: slide-in-up 2s ease-in-out forwards;
+        animation: slide-in-up 2s ease-in-out;
     }
 }
 
@@ -231,3 +232,4 @@ h2 {
         animation-fill-mode: forwards;
     }
 }
+
