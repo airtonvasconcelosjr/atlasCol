@@ -36,11 +36,11 @@ export class ListaImagensComponent {
   ];
   ecoflex = [
     {id: 16, nome: '125', fabril:'Ecoflex', imagem: 'assets/imagens/125.png', descricao: 'assets/imagens/125_desc.png', abrirDescricao: false},
-    {id: 17, nome: '235', fabril:'Ecoflex', imagem: 'assets/imagens/235.png', descricao: 'assets/imagens/235_desc.png', abrirDescricao: false},
+    //{id: 17, nome: '235', fabril:'Ecoflex', imagem: 'assets/imagens/235.png', descricao: 'assets/imagens/235_desc.png', abrirDescricao: false},
     {id: 18, nome: '335', fabril:'Ecoflex', imagem: 'assets/imagens/335.png', descricao: 'assets/imagens/335_desc.png', abrirDescricao: false},
     {id: 19, nome: '425', fabril:'Ecoflex', imagem: 'assets/imagens/425.png', descricao: 'assets/imagens/425_desc.png', abrirDescricao: false},
-    {id: 20, nome: '535', fabril:'Ecoflex', imagem: 'assets/imagens/535.png', descricao: 'assets/imagens/535_desc.png', abrirDescricao: false},
-    {id: 21, nome: '675', fabril:'Ecoflex', imagem: 'assets/imagens/675.png', descricao: 'assets/imagens/675_desc.png', abrirDescricao: false},
+   // {id: 20, nome: '535', fabril:'Ecoflex', imagem: 'assets/imagens/535.png', descricao: 'assets/imagens/535_desc.png', abrirDescricao: false},
+   // {id: 21, nome: '675', fabril:'Ecoflex', imagem: 'assets/imagens/675.png', descricao: 'assets/imagens/675_desc.png', abrirDescricao: false},
     {id: 22, nome: '775', fabril:'Ecoflex', imagem: 'assets/imagens/775.png', descricao: 'assets/imagens/775_desc.png', abrirDescricao: false},
   ];
   dunlopillo = [
@@ -82,6 +82,8 @@ export class ListaImagensComponent {
         this.mostrarOpcoes.restonic.setaParaBaixo = true;
         this.mostrarOpcoes.ecoflex.ativo = false;
         this.mostrarOpcoes.ecoflex.setaParaBaixo = true;
+        this.mostrarOpcoes.dunlopillo.ativo = false;
+        this.mostrarOpcoes.dunlopillo.setaParaBaixo = true;
       }
     } else if (opcao === 'mercosul') {
       this.mostrarOpcoes.mercosul.ativo = !this.mostrarOpcoes.mercosul.ativo;
@@ -95,6 +97,8 @@ export class ListaImagensComponent {
         this.mostrarOpcoes.restonic.setaParaBaixo = true;
         this.mostrarOpcoes.ecoflex.ativo = false;
         this.mostrarOpcoes.ecoflex.setaParaBaixo = true;
+        this.mostrarOpcoes.dunlopillo.ativo = false;
+        this.mostrarOpcoes.dunlopillo.setaParaBaixo = true;
       }
     } else if (opcao === 'restonic') {
       this.mostrarOpcoes.restonic.ativo = !this.mostrarOpcoes.restonic.ativo;
@@ -108,6 +112,8 @@ export class ListaImagensComponent {
         this.mostrarOpcoes.mercosul.setaParaBaixo = true;
         this.mostrarOpcoes.ecoflex.ativo = false;
         this.mostrarOpcoes.ecoflex.setaParaBaixo = true;
+        this.mostrarOpcoes.dunlopillo.ativo = false;
+        this.mostrarOpcoes.dunlopillo.setaParaBaixo = true;
       }
     }
     else if (opcao === 'ecoflex') {
@@ -122,6 +128,8 @@ export class ListaImagensComponent {
         this.mostrarOpcoes.mercosul.setaParaBaixo = true;
         this.mostrarOpcoes.restonic.ativo = false;
         this.mostrarOpcoes.restonic.setaParaBaixo = true;
+        this.mostrarOpcoes.dunlopillo.ativo = false;
+        this.mostrarOpcoes.dunlopillo.setaParaBaixo = true;
       }
     }
 
