@@ -1,6 +1,7 @@
-.custom-container { 
+.custom-container {
     display: flex;
     background-color: white;
+    animation-fill-mode: forwards
 }
 
 .column {
@@ -25,10 +26,25 @@
 }
 
 .mattress {
-    width: 50%; 
+    width: 60%;
     height: auto;
+    animation-name: slideInFromRight; /* Nome da animação */
+    animation-duration: 2s; /* Duração da animação */
+    animation-delay: 0.1s; /* Atraso antes de iniciar a animação */
+    animation-fill-mode: forwards; /* Manter estado final da animação */
+    opacity: 0;
 }
 
+@keyframes slideInFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%); /* Iniciar fora da tela à direita */
+    }
+    to {
+        animation-fill-mode: forwards;
+        opacity: 1;
+    }
+}
 
 .number {
     font-size: 2rem;
@@ -36,18 +52,29 @@
     color: black;
 }
 
-
-.parag{
+.parag {
     text-align: justify;
 }
 
-.title{
+.title {
     font-size: 2.5rem;
     color: black;
     margin-left: 2%;
+    animation-name: fadeIn; /* Nome da animação */
+    animation-duration: 1.5s; /* Duração da animação */
+    animation-delay: 1s; /* Atraso antes de iniciar a animação */
+    animation-fill-mode: forwards; /* Manter estado final da animação */
+    opacity: 0;
 }
 
-
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 h2 {
     display: flex;
@@ -55,12 +82,12 @@ h2 {
     font-weight: bold;
     font-size: 2.5rem;
     margin-bottom: 10px;
-    margin-left: 50px;
+    margin-left: 60px;
     margin-top: -25px;
 }
 
 @media (max-width: 900px) {
-    .title{
+    .title {
         font-size: 2rem;
     }
 }
@@ -72,10 +99,73 @@ h2 {
 }
 
 @media (max-width: 700px) {
-    .title{
+    .title {
         font-size: 1.5rem;
     }
     h2 {
         font-size: 1.3rem;
+    }
+}
+
+
+/*phone query*/
+@media (max-width: 428px) {
+    .custom-container {
+        flex-wrap: wrap;
+    }
+
+    .mattress {
+        width: 65%;
+        margin-top: 25px;
+    }
+    .column {
+        width: 100%;
+    }
+
+    .title-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .title {
+        margin-top: 15px;
+        margin-left: 10px;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .column {
+        animation: slide-in-right 1s ease-in-out forwards;
+        animation-fill-mode: forwards
+    }
+}
+
+@keyframes slide-in-right {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@media (min-width: 429px) {
+    .column {
+        animation: slide-in-up 2s ease-in-out forwards;
+        animation-fill-mode: forwards
+    }
+}
+
+@keyframes slide-in-up {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
