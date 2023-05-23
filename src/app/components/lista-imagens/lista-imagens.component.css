@@ -20,7 +20,7 @@
   margin: 5px;
   aspect-ratio: 3/2;
   object-fit: contain;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2z);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   margin-top: 10px;
   animation-name: slideDown;
   animation-duration: 1s;
@@ -34,6 +34,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 10px; 
+  white-space: nowrap;
 }
 
 .botoes-descricao button {
@@ -46,9 +47,9 @@
   color: white;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: 300;
-  max-width: 150px;
   max-height: auto;
-  cursor: pointer;  
+  cursor: pointer;
+  white-space: nowrap; /* Impede que o conteúdo quebre em várias linhas */
 }
 
 .imagem-descricao {

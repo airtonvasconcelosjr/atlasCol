@@ -19,6 +19,10 @@
     Final 9
     <i class="fa mt-1" [ngClass]="{'disable fa-angle-down': mostrarOpcoes.dunlopillo.setaParaBaixo, 'fa-angle-up': !mostrarOpcoes.dunlopillo.setaParaBaixo}"></i>
   </button>
+  <button class="title" [class.disabled]="!mostrarOpcoes.armil.setaParaBaixo" (click)="toggleMostrar('armil')">
+    Cama
+    <i class="fa mt-1" [ngClass]="{'disable fa-angle-down': mostrarOpcoes.armil.setaParaBaixo, 'fa-angle-up': !mostrarOpcoes.armil.setaParaBaixo}"></i>
+  </button>
   
 </div>
 
@@ -109,7 +113,24 @@
     </section>
   </div>
 
-<div *ngIf="!mostrarOpcoes.king.ativo && !mostrarOpcoes.restonic.ativo && !mostrarOpcoes.mercosul.ativo  && !mostrarOpcoes.ecoflex.ativo && !mostrarOpcoes.dunlopillo.ativo">
+  <div *ngIf="mostrarOpcoes.armil.ativo">
+    <section class="colchoes">
+      <div class="lista-colchoes" *ngFor="let colchao of armil">
+        <ng-container *ngIf="((mostrarOpcoes.armil.ativo === true && colchao.fabril === 'Armil'))">
+          <img id="imagem-colchao" [src]="colchao.imagem" alt="Colchão {{ colchao.id }}" class="media-object img-responsive img-thumbnail imagem-colchao">
+          <div class="botoes-descricao">
+            <button (click)="toggleDescricao(colchao)">
+              {{ colchao.abrirDescricao ? 'Fechar' : 'Descrição ' + colchao.nome }}
+            </button>
+          </div>
+          <img [hidden]="!colchao.abrirDescricao" [src]="colchao.descricao" class="imagem-descricao"  (click)="toggleDescricao(colchao)">
+          <button [hidden]="!colchao.abrirDescricao" class="button-descricao" (click)="toggleDescricao(colchao)"> {{ colchao.abrirDescricao ? 'Clique na imagem para fechar' : 'Descrição ' }}</button>
+        </ng-container>
+      </div>
+    </section>
+  </div>
+
+<div *ngIf="!mostrarOpcoes.king.ativo && !mostrarOpcoes.restonic.ativo && !mostrarOpcoes.mercosul.ativo  && !mostrarOpcoes.ecoflex.ativo && !mostrarOpcoes.dunlopillo.ativo && !mostrarOpcoes.armil.ativo">
   <app-index></app-index>
 </div>
 
