@@ -15,9 +15,9 @@
     Final 7
     <i class="fa mt-1" [ngClass]="{'fa-angle-down': mostrarOpcoes.restonic.setaParaBaixo, 'fa-angle-up': !mostrarOpcoes.restonic.setaParaBaixo}"></i>
   </button>
-  <button class="title" (click)="toggleMostrar('dunlopillo')">
+  <button class="title" [class.disabled]="!mostrarOpcoes.dunlopillo.setaParaBaixo" (click)="toggleMostrar('dunlopillo')">
     Final 9
-    <i class="fa mt-1" [ngClass]="{'fa-angle-down': mostrarOpcoes.dunlopillo.setaParaBaixo, 'fa-angle-up': !mostrarOpcoes.dunlopillo.setaParaBaixo}"></i>
+    <i class="fa mt-1" [ngClass]="{'disable fa-angle-down': mostrarOpcoes.dunlopillo.setaParaBaixo, 'fa-angle-up': !mostrarOpcoes.dunlopillo.setaParaBaixo}"></i>
   </button>
   
 </div>

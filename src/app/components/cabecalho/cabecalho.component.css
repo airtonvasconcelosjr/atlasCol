@@ -28,26 +28,20 @@
   
   
   @media (max-width: 576px) {
-    .cabecalho .logo {
-      padding: 2rem;
-    }
-    .cabecalho p {
-      font-size: 1.5rem
-    }
   }
   
   @media (max-width: 768px) {
     .cabecalho .logo {
       width: 80%;
     }
-    .frase,
-    .cabecalho .imagem {
+    .frase {
       display: none;
     }
 
     .logo1{
-      margin-left: 15%;
+      width: 105%;
+      margin-left: 0px;
       margin-top: 5px;
-      margin-bottom: 0;
+      margin-bottom: -10px;
     }
   }
