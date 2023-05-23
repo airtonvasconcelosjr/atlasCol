@@ -111,6 +111,14 @@
   margin: 5px;
 }
 
+button.disabled {
+  /* Estilos aplicados quando o botão estiver desabilitado */
+  opacity: 0.5;
+  color: rgb(79, 79, 79);
+  /* Outros estilos desejados */
+}
+
+
 .button-wrapper {
   display: flex;
   justify-content: space-between;
@@ -175,8 +183,14 @@
 @media (max-width: 428px) { /* Ajuste o valor para se adequar ao iPhone 12 Pro */
   .title {
       padding: 1px;
-      border-radius: 4px;
+      border-radius: 10px;
   }
 }
 
+@media (max-width: 555px) { /* Ajuste o valor para se adequar ao iPhone 12 Pro */
+  .title {
+      padding: 1px;
+      border-radius: 10px;
+  }
+}
 
