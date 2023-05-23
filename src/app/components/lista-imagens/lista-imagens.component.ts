@@ -45,6 +45,14 @@ export class ListaImagensComponent {
   ];
   dunlopillo = [
     { id: 23, nome: '469', fabril:'Dunlopillo', imagem: 'assets/imagens/469.png', descricao: 'assets/imagens/469_desc.png', abrirDescricao: false }
+  ];
+  armil = [
+    { id: 24, nome: 'Afrodite', fabril:'Armil', imagem: 'assets/imagens/afrodite.png', descricao: 'assets/imagens/afrodite_desc.png', abrirDescricao: false },
+    { id: 25, nome: 'Alba', fabril:'Armil', imagem: 'assets/imagens/alba.png', descricao: 'assets/imagens/afrodite_desc.png', abrirDescricao: false },
+    { id: 26, nome: 'Cipo', fabril:'Armil', imagem: 'assets/imagens/cipo.png', descricao: 'assets/imagens/afrodite_desc.png', abrirDescricao: false },
+    { id: 27, nome: 'Doos', fabril:'Armil', imagem: 'assets/imagens/doos.png', descricao: 'assets/imagens/afrodite_desc.png', abrirDescricao: false },
+    { id: 28, nome: 'Neo Indiano', fabril:'Armil', imagem: 'assets/imagens/neo_indiano.png', descricao: 'assets/imagens/afrodite_desc.png', abrirDescricao: false },
+
   ]
 
   mostrarOpcoes = {
@@ -52,19 +60,10 @@ export class ListaImagensComponent {
     mercosul: { ativo: false, setaParaBaixo: true },
     restonic: { ativo: false, setaParaBaixo: true },
     ecoflex: { ativo: false, setaParaBaixo: true },
-    dunlopillo: { ativo: false, setaParaBaixo: true }
+    dunlopillo: { ativo: false, setaParaBaixo: true },
+    armil: { ativo: false, setaParaBaixo: true },
   };
 
-  mostrarKing = false;
-  mostrarSetaParaBaixo = true;
-  mostrarMercosul = false;
-  mostrarSetaParaBaixoMercosul = true;
-  mostrarRestonic = false;
-  mostrarSetaParaBaixoRestonic = true;
-  mostrarEcoflex = false;
-  mostrarSetaParaBaixoEcoflex = true
-  mostrarDunlopillo = false;
-  mostrarSetaParaBaixoDunlopillo = true
   
 
   colchaoAberto: number | null = null;
@@ -84,6 +83,8 @@ export class ListaImagensComponent {
         this.mostrarOpcoes.ecoflex.setaParaBaixo = true;
         this.mostrarOpcoes.dunlopillo.ativo = false;
         this.mostrarOpcoes.dunlopillo.setaParaBaixo = true;
+        this.mostrarOpcoes.armil.ativo = false;
+        this.mostrarOpcoes.armil.setaParaBaixo = true;
       }
     } else if (opcao === 'mercosul') {
       this.mostrarOpcoes.mercosul.ativo = !this.mostrarOpcoes.mercosul.ativo;
@@ -99,6 +100,8 @@ export class ListaImagensComponent {
         this.mostrarOpcoes.ecoflex.setaParaBaixo = true;
         this.mostrarOpcoes.dunlopillo.ativo = false;
         this.mostrarOpcoes.dunlopillo.setaParaBaixo = true;
+        this.mostrarOpcoes.armil.ativo = false;
+        this.mostrarOpcoes.armil.setaParaBaixo = true;
       }
     } else if (opcao === 'restonic') {
       this.mostrarOpcoes.restonic.ativo = !this.mostrarOpcoes.restonic.ativo;
@@ -114,6 +117,8 @@ export class ListaImagensComponent {
         this.mostrarOpcoes.ecoflex.setaParaBaixo = true;
         this.mostrarOpcoes.dunlopillo.ativo = false;
         this.mostrarOpcoes.dunlopillo.setaParaBaixo = true;
+        this.mostrarOpcoes.armil.ativo = false;
+        this.mostrarOpcoes.armil.setaParaBaixo = true;
       }
     }
     else if (opcao === 'ecoflex') {
@@ -130,6 +135,8 @@ export class ListaImagensComponent {
         this.mostrarOpcoes.restonic.setaParaBaixo = true;
         this.mostrarOpcoes.dunlopillo.ativo = false;
         this.mostrarOpcoes.dunlopillo.setaParaBaixo = true;
+        this.mostrarOpcoes.armil.ativo = false;
+        this.mostrarOpcoes.armil.setaParaBaixo = true;
       }
     }
 
@@ -147,6 +154,26 @@ export class ListaImagensComponent {
         this.mostrarOpcoes.restonic.setaParaBaixo = true;
         this.mostrarOpcoes.ecoflex.ativo = false;
         this.mostrarOpcoes.ecoflex.setaParaBaixo = true;
+        this.mostrarOpcoes.armil.ativo = false;
+        this.mostrarOpcoes.armil.setaParaBaixo = true;
+      }
+    }
+    else if (opcao === 'armil') {
+      this.mostrarOpcoes.armil.ativo = !this.mostrarOpcoes.armil.ativo;
+      this.mostrarOpcoes.armil.setaParaBaixo = !this.mostrarOpcoes.armil.setaParaBaixo;
+  
+      // Fechar tudo no caso de escolher Dunlopillo
+      if (this.mostrarOpcoes.armil.ativo) {
+        this.mostrarOpcoes.king.ativo = false;
+        this.mostrarOpcoes.king.setaParaBaixo = true;
+        this.mostrarOpcoes.mercosul.ativo = false;
+        this.mostrarOpcoes.mercosul.setaParaBaixo = true;
+        this.mostrarOpcoes.restonic.ativo = false;
+        this.mostrarOpcoes.restonic.setaParaBaixo = true;
+        this.mostrarOpcoes.ecoflex.ativo = false;
+        this.mostrarOpcoes.ecoflex.setaParaBaixo = true;
+        this.mostrarOpcoes.dunlopillo.ativo = false;
+        this.mostrarOpcoes.dunlopillo.setaParaBaixo = true;
       }
     }
   }
