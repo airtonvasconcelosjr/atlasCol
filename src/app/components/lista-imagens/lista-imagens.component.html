@@ -119,9 +119,7 @@
         <ng-container *ngIf="((mostrarOpcoes.armil.ativo === true && colchao.fabril === 'Armil'))">
           <img id="imagem-colchao" [src]="colchao.imagem" alt="Colchão {{ colchao.id }}" class="media-object img-responsive img-thumbnail imagem-colchao">
           <div class="botoes-descricao">
-            <button (click)="toggleDescricao(colchao)">
-              {{ colchao.abrirDescricao ? 'Fechar' : 'Descrição ' + colchao.nome }}
-            </button>
+            <button class="botao-cama" (click)="redirect(colchao.link)">{{ colchao.nome }}</button>
           </div>
           <img [hidden]="!colchao.abrirDescricao" [src]="colchao.descricao" class="imagem-descricao"  (click)="toggleDescricao(colchao)">
           <button [hidden]="!colchao.abrirDescricao" class="button-descricao" (click)="toggleDescricao(colchao)"> {{ colchao.abrirDescricao ? 'Clique na imagem para fechar' : 'Descrição ' }}</button>
@@ -129,6 +127,7 @@
       </div>
     </section>
   </div>
+  
 
 <div *ngIf="!mostrarOpcoes.king.ativo && !mostrarOpcoes.restonic.ativo && !mostrarOpcoes.mercosul.ativo  && !mostrarOpcoes.ecoflex.ativo && !mostrarOpcoes.dunlopillo.ativo && !mostrarOpcoes.armil.ativo">
   <app-index></app-index>

@@ -73,9 +73,10 @@
 }
 
 .button-descricao {
-  position: fixed;
+  position: relative;
   top: 50%;
-  left: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 2;
   font-size: 40px;
   border: none;
@@ -96,10 +97,11 @@
 }
 
 .title{
+  flex: 1 0 auto;
   font-size: 12px;
   position: relative;
   cursor: pointer;
-  margin: 15px 5px 15px 5px;
+  margin: 15px 5px;
   padding: 5px 15px; 
   border-radius: 10px;
   border: none;
@@ -107,8 +109,6 @@
   color: white;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: 300;
-  margin-right: 350px;
-  flex-basis: calc(20% - 10px);
   margin: 5px;
 }
 
@@ -122,7 +122,7 @@ button.disabled {
 
 .button-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -184,14 +184,14 @@ button.disabled {
 @media (max-width: 428px) { /* Ajuste o valor para se adequar ao iPhone 12 Pro */
   .title {
       padding: 1px;
-      border-radius: 10px;
+      border-radius: 5px;
   }
 }
 
 @media (max-width: 555px) { /* Ajuste o valor para se adequar ao iPhone 12 Pro */
   .title {
       padding: 1px;
-      border-radius: 10px;
+      border-radius: 5px;
   }
 }
 
