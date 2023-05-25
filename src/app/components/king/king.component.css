@@ -183,14 +183,15 @@
   
   @media (max-width: 428px) { /* Ajuste o valor para se adequar ao iPhone 12 Pro */
     .title {
-        padding: 1px;
+        padding: 2px 15px;
         border-radius: 5px;
     }
   }
   
   @media (max-width: 555px) { /* Ajuste o valor para se adequar ao iPhone 12 Pro */
     .title {
-        padding: 1px;
+        padding: 1px 60px;
+        font-size: 8px;
         border-radius: 5px;
     }
   }
