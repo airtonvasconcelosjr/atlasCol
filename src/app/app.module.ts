@@ -8,6 +8,7 @@ import { RodapeComponent } from './components/rodape/rodape.component';
 import { ListaImagensComponent } from './components/lista-imagens/lista-imagens.component';
 import { DescricaoImagensComponent } from './components/descricao-imagens/descricao-imagens.component';
 import { IndexComponent } from './components/index/index.component';
+import { KingComponent } from './components/king/king.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { IndexComponent } from './components/index/index.component';
     RodapeComponent,
     ListaImagensComponent,
     DescricaoImagensComponent,
-    IndexComponent
+    IndexComponent,
+    KingComponent
   ],
   imports: [
     BrowserModule,

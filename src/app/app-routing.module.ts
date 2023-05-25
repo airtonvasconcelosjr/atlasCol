@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ListaImagensComponent } from './components/lista-imagens/lista-imagens.component';
+import { KingComponent } from './components/king/king.component';
 
 const routes: Routes = [
   {
@@ -9,9 +10,13 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path:'listarImagens',
+    path:'home',
     component: ListaImagensComponent
   },
+  {
+    path:'final3',
+    component: KingComponent
+  }
 ];
 
 @NgModule({
