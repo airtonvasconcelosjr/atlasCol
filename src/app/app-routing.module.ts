@@ -6,7 +6,7 @@ import { KingComponent } from './components/king/king.component';
 const routes: Routes = [
   {
     path:'',
-    redirectTo: 'listarImagens',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {
