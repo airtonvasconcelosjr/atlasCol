@@ -3,10 +3,7 @@
     Final 2
     <i class="fa mt-1" [ngClass]="{'fa-angle-down': mostrarOpcoes.mercosul.setaParaBaixo, 'fa-angle-up': !mostrarOpcoes.mercosul.setaParaBaixo}"></i>
   </button>
-  <button class="title" [class.disabled]="!mostrarOpcoes.king.setaParaBaixo"  (click)="toggleMostrar('king')">
-    Final 3
-    <i class="fa mt-1" [ngClass]="{'fa-angle-down': mostrarOpcoes.king.setaParaBaixo, 'fa-angle-up': !mostrarOpcoes.king.setaParaBaixo}"></i>
-  </button>
+  <button class="title" routerLink="/final3"> Final 3</button>
   <button class="title" [class.disabled]="!mostrarOpcoes.ecoflex.setaParaBaixo"  (click)="toggleMostrar('ecoflex')">
     Final 5
     <i class="fa mt-1" [ngClass]="{'fa-angle-down': mostrarOpcoes.ecoflex.setaParaBaixo, 'fa-angle-up': !mostrarOpcoes.ecoflex.setaParaBaixo}"></i>
