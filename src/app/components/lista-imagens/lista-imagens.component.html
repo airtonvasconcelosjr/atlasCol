@@ -1,78 +1,19 @@
 <div class="button-wrapper">
-  <button class="title" routerLink="/final2"> Final 2</button>
-  <button class="title" routerLink="/final3"> Final 3</button>
-  <button class="title" routerLink="/final5"> Final 5</button>
-  <button class="title" [class.disabled]="!mostrarOpcoes.restonic.setaParaBaixo"  (click)="toggleMostrar('restonic')">
-    Final 7
-    <i class="fa mt-1" [ngClass]="{'fa-angle-down': mostrarOpcoes.restonic.setaParaBaixo, 'fa-angle-up': !mostrarOpcoes.restonic.setaParaBaixo}"></i>
-  </button>
-  <button class="title" [class.disabled]="!mostrarOpcoes.dunlopillo.setaParaBaixo" (click)="toggleMostrar('dunlopillo')">
-    Final 9
-    <i class="fa mt-1" [ngClass]="{'disable fa-angle-down': mostrarOpcoes.dunlopillo.setaParaBaixo, 'fa-angle-up': !mostrarOpcoes.dunlopillo.setaParaBaixo}"></i>
-  </button>
-  <button class="title" [class.disabled]="!mostrarOpcoes.armil.setaParaBaixo" (click)="toggleMostrar('armil')">
-    Cama
-    <i class="fa mt-1" [ngClass]="{'disable fa-angle-down': mostrarOpcoes.armil.setaParaBaixo, 'fa-angle-up': !mostrarOpcoes.armil.setaParaBaixo}"></i>
-  </button>
-  
+  <div class="button-container">
+    <button class="title_1" (click)="toggleBotoesAdicionais()">Produtos</button>
+  <i (click)="toggleBotoesAdicionais()" class="fa-solid fa-caret-down fa-beat cursor-pointer" cursor="pointer" style="color: white;"></i>
+  </div>
 </div>
 
-
-
-
-<div *ngIf="mostrarOpcoes.restonic.ativo">
-  <section class="colchoes">
-    <div class="lista-colchoes" *ngFor="let colchao of restonic">
-      <ng-container *ngIf="((mostrarOpcoes.restonic.ativo === true && colchao.fabril === 'Restonic'))">
-        <img id="imagem-colchao" [src]="colchao.imagem" alt="Colchão {{ colchao.id }}" class="media-object img-responsive img-thumbnail imagem-colchao">
-        <div class="botoes-descricao">
-          <button (click)="toggleDescricao(colchao)">
-            {{ colchao.abrirDescricao ? 'Fechar' : 'Descrição ' + colchao.nome }}
-          </button>
-        </div>
-        <img [hidden]="!colchao.abrirDescricao" [src]="colchao.descricao" class="imagem-descricao467"  (click)="toggleDescricao(colchao)">
-        <button [hidden]="!colchao.abrirDescricao" class="button-descricao" (click)="toggleDescricao(colchao)"> {{ colchao.abrirDescricao ? 'Clique na imagem para fechar' : 'Descrição ' }}</button>
-      </ng-container>
-    </div>
-  </section>
+<div *ngIf="mostrarBotoesAdicionais" class="button-wrapper">
+  <button class="title" routerLink="/final2">Final 2</button>
+  <button class="title" routerLink="/final3">Final 3</button>
+  <button class="title" routerLink="/final5">Final 5</button>
+  <button class="title" routerLink="/final7">Final 7</button>
+  <button class="title" routerLink="/final9">Final 9</button>
+  <button class="title" routerLink="/camas">Camas</button>
 </div>
 
-
-
-  <div *ngIf="mostrarOpcoes.dunlopillo.ativo">
-    <section class="colchoes">
-      <div class="lista-colchoes" *ngFor="let colchao of dunlopillo">
-        <ng-container *ngIf="((mostrarOpcoes.dunlopillo.ativo === true && colchao.fabril === 'Dunlopillo'))">
-          <img id="imagem-colchao" [src]="colchao.imagem" alt="Colchão {{ colchao.id }}" class="media-object img-responsive img-thumbnail imagem-colchao">
-          <div class="botoes-descricao">
-            <button (click)="toggleDescricao(colchao)">
-              {{ colchao.abrirDescricao ? 'Fechar' : 'Descrição ' + colchao.nome }}
-            </button>
-          </div>
-          <img [hidden]="!colchao.abrirDescricao" [src]="colchao.descricao" class="imagem-descricao"  (click)="toggleDescricao(colchao)">
-          <button [hidden]="!colchao.abrirDescricao" class="button-descricao" (click)="toggleDescricao(colchao)"> {{ colchao.abrirDescricao ? 'Clique na imagem para fechar' : 'Descrição ' }}</button>
-        </ng-container>
-      </div>
-    </section>
-  </div>
-
-  <div *ngIf="mostrarOpcoes.armil.ativo">
-    <section class="colchoes">
-      <div class="lista-colchoes" *ngFor="let colchao of armil">
-        <ng-container *ngIf="((mostrarOpcoes.armil.ativo === true && colchao.fabril === 'Armil'))">
-          <img id="imagem-colchao" [src]="colchao.imagem" alt="Colchão {{ colchao.id }}" class="media-object img-responsive img-thumbnail imagem-colchao">
-          <div class="botoes-descricao">
-            <button class="botao-cama" (click)="redirect(colchao.link)">{{ colchao.nome }}</button>
-          </div>
-          <img [hidden]="!colchao.abrirDescricao" [src]="colchao.descricao" class="imagem-descricao"  (click)="toggleDescricao(colchao)">
-          <button [hidden]="!colchao.abrirDescricao" class="button-descricao" (click)="toggleDescricao(colchao)"> {{ colchao.abrirDescricao ? 'Clique na imagem para fechar' : 'Descrição ' }}</button>
-        </ng-container>
-      </div>
-    </section>
-  </div>
-  
-
-<div *ngIf="!mostrarOpcoes.king.ativo && !mostrarOpcoes.restonic.ativo && !mostrarOpcoes.mercosul.ativo  && !mostrarOpcoes.ecoflex.ativo && !mostrarOpcoes.dunlopillo.ativo && !mostrarOpcoes.armil.ativo">
+<div> 
   <app-index></app-index>
 </div>
-
