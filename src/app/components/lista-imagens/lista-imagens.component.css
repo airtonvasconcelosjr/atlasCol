@@ -15,9 +15,9 @@
   margin: 5px;
   border: 1px solid white;
   animation-name: slideDown;
-  animation-duration: 1s;
-  animation-delay: 0.2s;
+  animation-duration: .5s;
   animation-fill-mode: forwards;
+  opacity: 0;
 }
 .cursor-pointer {
   cursor: pointer;
@@ -110,14 +110,17 @@
   }
 }
 
-@media (max-width: 428px) { /* Ajuste o valor para se adequar ao iPhone 12 Pro */
+@media (max-width: 428px) {
   .title {
       padding: 1px;
       border-radius: 5px;
   }
 }
 
-@media (max-width: 555px) { /* Ajuste o valor para se adequar ao iPhone 12 Pro */
+@media (max-width: 555px) {
+  .title_1 {
+    font-size: 14px;
+  }
   .title {
       padding: 1px;
       border-radius: 5px;
