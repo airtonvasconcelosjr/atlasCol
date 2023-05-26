@@ -9,6 +9,8 @@ import { ListaImagensComponent } from './components/lista-imagens/lista-imagens.
 import { DescricaoImagensComponent } from './components/descricao-imagens/descricao-imagens.component';
 import { IndexComponent } from './components/index/index.component';
 import { KingComponent } from './components/king/king.component';
+import { MercosulComponent } from './components/mercosul/mercosul.component';
+import { EcoflexComponent } from './components/ecoflex/ecoflex.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { KingComponent } from './components/king/king.component';
     ListaImagensComponent,
     DescricaoImagensComponent,
     IndexComponent,
-    KingComponent
+    KingComponent,
+    MercosulComponent,
+    EcoflexComponent
   ],
   imports: [
     BrowserModule,
