@@ -1,0 +1,25 @@
+<button class="title" routerLink="/home">
+    <i class="fa fa-caret-left"></i> 
+    Voltar
+</button>
+<div>
+    <section class="colchoes">
+      <div class="lista-colchoes" *ngFor="let colchao of mercosul">
+        <ng-container>
+          <img id="imagem-colchao" [src]="colchao.imagem" alt="Colchão {{ colchao.id }}" class="media-object img-responsive img-thumbnail imagem-colchao">
+          <div class="botoes-descricao">
+            <button (click)="toggleDescricao(colchao)">
+              {{ colchao.abrirDescricao ? 'Fechar' : 'Descrição ' + colchao.nome }}
+            </button>
+          </div>
+          <img [hidden]="!colchao.abrirDescricao" [src]="colchao.descricao" class="imagem-descricao"  (click)="toggleDescricao(colchao)">
+          <button [hidden]="!colchao.abrirDescricao" class="button-descricao" (click)="toggleDescricao(colchao)"> {{ colchao.abrirDescricao ? 'Clique na imagem para fechar' : 'Descrição ' }}</button>
+        </ng-container>
+      </div>
+    </section>
+  </div>
+
+  <button class="title" routerLink="/home">
+    <i class="fa fa-caret-left"></i> 
+    Voltar
+</button>
