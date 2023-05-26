@@ -4,6 +4,9 @@ import { ListaImagensComponent } from './components/lista-imagens/lista-imagens.
 import { KingComponent } from './components/king/king.component';
 import { MercosulComponent } from './components/mercosul/mercosul.component';
 import { EcoflexComponent } from './components/ecoflex/ecoflex.component';
+import { DunlopilloComponent } from './components/dunlopillo/dunlopillo.component';
+import { RestonicComponent } from './components/restonic/restonic.component';
+import { ArmilComponent } from './components/armil/armil.component';
 
 const routes: Routes = [
   {
@@ -26,6 +29,18 @@ const routes: Routes = [
   {
     path:'final5',
     component: EcoflexComponent
+  },
+  {
+    path:'final7',
+    component: RestonicComponent
+  },
+  {
+    path:'final9',
+    component: DunlopilloComponent
+  },
+  {
+    path:'camas',
+    component: ArmilComponent
   },
 ];
 

@@ -11,6 +11,9 @@ import { IndexComponent } from './components/index/index.component';
 import { KingComponent } from './components/king/king.component';
 import { MercosulComponent } from './components/mercosul/mercosul.component';
 import { EcoflexComponent } from './components/ecoflex/ecoflex.component';
+import { DunlopilloComponent } from './components/dunlopillo/dunlopillo.component';
+import { RestonicComponent } from './components/restonic/restonic.component';
+import { ArmilComponent } from './components/armil/armil.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { EcoflexComponent } from './components/ecoflex/ecoflex.component';
     IndexComponent,
     KingComponent,
     MercosulComponent,
-    EcoflexComponent
+    EcoflexComponent,
+    DunlopilloComponent,
+    RestonicComponent,
+    ArmilComponent
   ],
   imports: [
     BrowserModule,
