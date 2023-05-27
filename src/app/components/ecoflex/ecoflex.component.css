@@ -199,7 +199,7 @@
   
   @media (max-width: 555px) { /* Ajuste o valor para se adequar ao iPhone 12 Pro */
     .title {
-        padding: 1px;
+        padding: 1px 8px;
         border-radius: 5px;
     }
   }
