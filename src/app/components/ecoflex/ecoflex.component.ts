@@ -12,7 +12,7 @@
     }
     ecoflex = [
       {id: 16, nome: '125', fabril:'Ecoflex', imagem: 'assets/imagens/125.png', descricao: 'assets/imagens/125_desc.png', abrirDescricao: false},
-      //{id: 17, nome: '235', fabril:'Ecoflex', imagem: 'assets/imagens/235.png', descricao: 'assets/imagens/235_desc.png', abrirDescricao: false},
+      {id: 17, nome: '235', fabril:'Ecoflex', imagem: 'assets/imagens/235.png', descricao: 'assets/imagens/235_desc.png', abrirDescricao: false},
       {id: 18, nome: '335', fabril:'Ecoflex', imagem: 'assets/imagens/335.png', descricao: 'assets/imagens/335_desc.png', abrirDescricao: false},
       {id: 19, nome: '425', fabril:'Ecoflex', imagem: 'assets/imagens/425.png', descricao: 'assets/imagens/425_desc.png', abrirDescricao: false},
     // {id: 20, nome: '535', fabril:'Ecoflex', imagem: 'assets/imagens/535.png', descricao: 'assets/imagens/535_desc.png', abrirDescricao: false},
