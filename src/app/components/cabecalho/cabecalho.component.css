@@ -6,23 +6,28 @@
     justify-content: space-between;
   }
 
-  
+  .imagem{
+    z-index: 1;
+  }
   .cabecalho .imagem{
-    width: 50%;
+    width: 40%;
+    margin-right: 25px;
   }
 
   .frase{
-    width: 50%;
-    margin-left: 55px;
+    width: 40%;
+    margin-left: 85px;
     margin-top: 25px;
   }
 
   
   .logo1{
-    width: 80%;
+    position: relative;
+    width: 60%;
     margin-bottom: -60px;
     margin-left: -25px;
     margin-top: -25px;
+    z-index: 999;
   }
   
   
