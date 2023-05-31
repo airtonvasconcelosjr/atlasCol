@@ -18,6 +18,7 @@ export class ArmilComponent {
     { id: 26, link:'https://l1nq.com/ZKipj', nome: 'Cipo', fabril:'Armil', imagem: 'assets/imagens/cipo.png', descricao: 'assets/imagens/afrodite_desc.png', abrirDescricao: false },
     { id: 27, link:'https://encr.pw/IG684', nome: 'Doos', fabril:'Armil', imagem: 'assets/imagens/doos.png', descricao: 'assets/imagens/afrodite_desc.png', abrirDescricao: false },
     { id: 28, link:'https://encr.pw/zkApa', nome: 'Neo Indiano', fabril:'Armil', imagem: 'assets/imagens/neo_indiano.png', descricao: 'assets/imagens/afrodite_desc.png', abrirDescricao: false },
+    { id: 28, link:'', nome: 'Carla', fabril:'Armil', imagem: 'assets/imagens/carla.png', descricao: 'assets/imagens/carla_desc.png', abrirDescricao: false },
   ]
   
   colchaoAberto: number | null = null;
