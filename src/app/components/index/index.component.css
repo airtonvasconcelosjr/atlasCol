@@ -34,6 +34,12 @@
     opacity: 0;
 }
 
+.livro{
+    color: black;
+    margin-left: 10px;
+    font-style: italic;
+}
+
 @keyframes slideInFromRight {
     from {
         opacity: 0;
