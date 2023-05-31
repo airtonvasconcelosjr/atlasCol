@@ -94,6 +94,12 @@
     opacity: 0;
 }
 
+.icon{
+    margin-left: 15px;
+    font-size: 15px;
+    color: black;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
