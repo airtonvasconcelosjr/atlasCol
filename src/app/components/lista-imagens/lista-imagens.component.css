@@ -121,9 +121,10 @@
   }
 }
 
-@media (max-width: 555px) {
+@media (max-width: 610px) {
   .title_1 {
     font-size: 14px;
+    margin-top: -20px;
   }
   .title {
       padding: 1px;
