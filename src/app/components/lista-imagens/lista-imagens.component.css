@@ -123,8 +123,14 @@
 
 @media (max-width: 610px) {
   .title_1 {
-    font-size: 14px;
-    margin-top: -20px;
+    font-size: 12px;
+    margin-top: -27px;
+    z-index: 999;
+  } 
+  .icon{
+    font-size: 18px;
+    margin-top: 4px;
+    z-index: 999;
   }
   .title {
       padding: 1px;
