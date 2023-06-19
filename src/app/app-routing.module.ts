@@ -7,6 +7,7 @@ import { EcoflexComponent } from './components/ecoflex/ecoflex.component';
 import { DunlopilloComponent } from './components/dunlopillo/dunlopillo.component';
 import { RestonicComponent } from './components/restonic/restonic.component';
 import { ArmilComponent } from './components/armil/armil.component';
+import { MercosulNovoComponent } from './components/mercosul-novo/mercosul-novo.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
   {
     path:'final2',
     component: MercosulComponent
+  },
+  {
+    path:'final2-novo',
+    component: MercosulNovoComponent
   },
   {
     path:'final3',
