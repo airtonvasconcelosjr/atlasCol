@@ -14,6 +14,7 @@ import { EcoflexComponent } from './components/ecoflex/ecoflex.component';
 import { DunlopilloComponent } from './components/dunlopillo/dunlopillo.component';
 import { RestonicComponent } from './components/restonic/restonic.component';
 import { ArmilComponent } from './components/armil/armil.component';
+import { MercosulNovoComponent } from './components/mercosul-novo/mercosul-novo.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ArmilComponent } from './components/armil/armil.component';
     EcoflexComponent,
     DunlopilloComponent,
     RestonicComponent,
-    ArmilComponent
+    ArmilComponent,
+    MercosulNovoComponent
   ],
   imports: [
     BrowserModule,
