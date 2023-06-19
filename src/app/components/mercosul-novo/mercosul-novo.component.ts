@@ -17,7 +17,7 @@ export class MercosulNovoComponent {
     { id: 12, nome: '452', fabril:'Mercosul-novo', imagem: 'assets/imagens/452N.png', descricao: 'assets/imagens/452_descN.png', abrirDescricao: false },
     { id: 13, nome: '562', fabril:'Mercosul-novo', imagem: 'assets/imagens/562.png', descricao: 'assets/imagens/562_descN.png', abrirDescricao: false },
     { id: 14, nome: '672', fabril:'Mercosul-novo', imagem: 'assets/imagens/672N.png', descricao: 'assets/imagens/672_descN.png', abrirDescricao: false },
-    { id: 14, nome: '682', fabril:'Mercosul-novo', imagem: 'assets/imagens/682.png', descricao: 'assets/imagens/682_desc.png', abrirDescricao: false },
+    { id: 14, nome: '682', fabril:'Mercosul-novo', imagem: 'assets/imagens/682.png', descricao: 'assets/imagens/682_descN.png', abrirDescricao: false },
   ];
   
   colchaoAberto: number | null = null;
