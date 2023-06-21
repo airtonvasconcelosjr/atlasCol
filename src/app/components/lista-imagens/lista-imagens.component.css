@@ -148,3 +148,9 @@
     transform: translateY(0);
   }
 }
+
+
+.title:hover{
+  font-weight: 800;
+  font-size: 14px;
+}
