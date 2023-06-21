@@ -122,34 +122,6 @@
     transform: scale(1.1);
   }
   
-  .title{
-    flex: 1 0 auto;
-    font-size: 12px;
-    position: relative;
-    cursor: pointer;
-    margin: 55px 5px 15px 5px;
-    padding: 5px 15px; 
-    border-radius: 10px;
-    border: none;
-    background-color: black;
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 300;
-  }
-  
-  button.disabled {
-    /* Estilos aplicados quando o botão estiver desabilitado */
-    opacity: 0.5;
-    color: rgb(79, 79, 79);
-    /* Outros estilos desejados */
-  }
-  
-  
-  .button-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
   
   @keyframes slideDown {
     0% {
@@ -225,11 +197,5 @@
     justify-content: center;
     align-items: center;
     height: 100vh; /* opcional, define a altura da div */
-  }
-  
-  .goback {
-    display:flex;
-    color: red;
-    /* Estilos do botão */
   }
   
