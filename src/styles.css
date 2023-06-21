@@ -71,3 +71,17 @@ h2 {
   }
 }
 
+.backbtn{
+  width: 100%;
+  height: auto;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  text-align: left;
+}
+
+.backimage{
+  width: 8%;
+  height: auto;
+  background-color: transparent;
+}
