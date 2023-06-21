@@ -30,16 +30,12 @@
   align-items: center;
   width: 100%;
   background-color: transparent;
-  margin-bottom: -12px;
   border: none;
   outline: none;
-  margin-top: -45px;
   color: white;
+  margin-bottom: -0.6rem;
 }
 
-.icon{
-  font-size: 30px;
-}
 
 .button-container {
   width: 100%;

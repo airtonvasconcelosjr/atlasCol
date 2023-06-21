@@ -32,10 +32,6 @@
   }
   
   
-  
-  @media (max-width: 576px) {
-  }
-  
   @media (max-width: 768px) {
     .cabecalho .logo {
       width: 80%;
@@ -50,3 +46,18 @@
       margin-bottom: -10px;
     }
   }
+
+  /*phone query*/
+@media (max-width: 428px) {
+  .logo1{
+    width: 100%;
+  }
+  .cabecalho{
+    height: 20vh;
+  }
+  .cabecalho .imagem{
+    width: 70%;
+    margin-right:0;
+    height: auto;
+  }
+}
