@@ -1,5 +1,5 @@
 
-.title{
+.btnNav{
   flex: 1 0 auto;
   font-size: 12px;
   position: relative;
@@ -55,6 +55,11 @@
   justify-content: center;
   flex-wrap: wrap;
   background-color: white;
+}
+
+.title:hover{
+  font-weight: 800;
+  font-size: 14px;
 }
 
 @keyframes slideDown {
@@ -149,8 +154,3 @@
   }
 }
 
-
-.title:hover{
-  font-weight: 800;
-  font-size: 14px;
-}
