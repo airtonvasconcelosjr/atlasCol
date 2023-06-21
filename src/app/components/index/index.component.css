@@ -109,6 +109,12 @@
     }
 }
 
+.attdate{
+    font-size: 10px;
+    text-align: right;
+    margin-bottom: -1.5rem;
+    margin-right: 2rem;
+}
 
 h2 {
     display: flex;
@@ -245,3 +251,61 @@ h2 {
     }
 }
 
+.subtitle{
+    text-align: center;
+    margin: 3rem auto;
+}
+
+h6{
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: rgb(22, 22, 22);
+}
+
+h3{
+    font-size: 35px;
+    font-weight: 1000;
+    color: rgb(22, 22, 22);
+}
+
+.divisor{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre as imagens */
+    margin-bottom: 2rem;
+  }
+  
+  .image {
+    display: flex;
+    align-items: center;
+  }
+  
+  .mobile-image {
+    width: 350px; /* Defina o tamanho desejado para as imagens */
+    height: auto;
+  }
+  
+  @media (max-width: 700px) {
+    .image-container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; /* Centralizar verticalmente */
+      width: 100%; /* Ajustar largura ao tamanho da tela */
+      margin: 20px auto;
+    }
+  
+    .mobile-image {
+      width: 100%;
+      margin: 10px auto;
+      max-width: none; /* Redefinir o tamanho máximo das imagens para ocupar a largura total */
+    }
+  }
+  
+  
+  
