@@ -215,6 +215,27 @@ h3{
 
 /*phone query*/
 @media (max-width: 428px) {
+    h6{
+        font-size: 8px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    .attdate{
+        margin-right:10px ;
+        font-size: 6px;
+    }
+    .subtitle{
+        margin: 1.5rem auto;
+    }
+    .divisor{
+        margin: auto 5rem;
+    }
+    .image-container-portifolios{
+        width: 50%;
+        height: auto;
+        gap: 10px;
+    }
     .custom-container {
         flex-wrap: wrap;
         margin-bottom: 5px;
